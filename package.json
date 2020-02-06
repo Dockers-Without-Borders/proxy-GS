@@ -1,11 +1,11 @@
 {
-  "name": "Dan-proxy",
+  "name": "Gurjot-proxy",
   "version": "1.0.0",
   "description": "It's a proxy server",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "dev-start": "nodemon server.js"
   },
   "repository": {
@@ -20,11 +20,13 @@
   },
   "homepage": "https://github.com/JADE-Global/Dan-proxy#readme",
   "devDependencies": {
-    "nodemon": "^2.0.1"
+    "nodemon": "^2.0.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
+    "newrelic": "^6.2.0"
   }
 }
